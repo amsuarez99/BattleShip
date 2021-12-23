@@ -10,6 +10,7 @@ from torpydo.game_controller import GameController
 myFleet = []
 enemyFleet = []
 
+
 def main():
 
     colorama.init()
@@ -55,6 +56,8 @@ def start_game():
     while True:
         print()
         print("Player, it's your turn")
+        print("Remaining ships: ", GameController.check_remaining_fleet(myFleet))
+        print("Remaining enemy ships: ", GameController.check_remaining_fleet(enemyFleet))
         position = parse_position(input("Enter coordinates for your shot :"))
         is_hit = GameController.check_is_hit(enemyFleet, position)
         if is_hit:

@@ -13,9 +13,17 @@ class GameController(object):
         for ship in ships:
             for position in ship.positions:
                 if position == shot:
+                    position.hit = True
                     return True
 
         return False
+    
+    def check_remaining_fleet(ships: list):
+        remaining = 0
+        for ship in ships:
+            if ship.check_is_alive():
+                remaining = remaining + 1
+        return remaining
 
     def initialize_ships():
         return [
