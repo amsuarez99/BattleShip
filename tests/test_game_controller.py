@@ -28,6 +28,39 @@ class TestShip(unittest.TestCase):
     def test_is_ship_valid_true(self):
         self.assertTrue(GameController.is_ship_valid(self.ships[0]))
 
+    def test_player_position_is_hit_not_sunken(self):
+        self.assertTrue()
+
+    def test_player_position_is_hit_sunken(self):
+        self.assertTrue()
+
+    def test_player_position_hit_is_last_ship(self):
+        self.assertTrue()
+
+    def test_player_position_is_not_hit(self):
+        self.assertTrue()
+
+    def test_is_player_win(self):
+        self.assertTrue()
+
+    def test_is_player_lose(self):
+        self.assertTrue()
+
+    def test_is_position_unique(self):
+        self.assertTrue()
+        
+    def test_is_position_non_unique(self):
+        self.assertTrue()
+
+    def test_player_position_is_invalid(self):
+        self.assertTrue()
+
+    def test_player_position_is_with_spaces(self):
+        self.assertTrue()
+
+    def test_player_position_is_out_of_range(self):
+        self.assertTrue()  
+
 def init_ship(ship: Ship, positions: list):
     ship.positions = positions
 
